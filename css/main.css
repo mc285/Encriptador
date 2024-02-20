@@ -215,14 +215,21 @@ button:hover{
         width: 90vw;
         gap: 5px;
         height: 90vh;
+        min-height: 750px;
     }
     h1{
-        font-size: 8vh;
+        font-size: 8vw;
+    }
+    h2{
+        font-size: 3vw;
+    }
+    .rules-box label{
+        font-size: 3vw;
     }
     button{
         width: 100%;
         margin: 10px 0;
-        height: 50px;
+        height: 35px;
     }
     section{
         padding: 0 15px;
