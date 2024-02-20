@@ -5,31 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="../Encriptador/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="../Encriptador/js/main.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
     <header>
         <nav>
-
         </nav>
     </header>
     <main>
         <h1>Encriptador</h1>
+        <img src="/img/Muñeco.png" alt="AluraChallenge">
         <section class="container">
             <h2>Texto a encriptar o desencriptar:</h2>
             <textarea name="text" id="encriptText" cols="30" rows="10"></textarea>
-            <div class="button-box">
-                <button onclick="encrypt()">Encriptar</button>
-                <button onclick="decrypt()">Desencriptar</button>
+            <div class="container-box">
+                <div class="rules-box">
+                    <label for="rulesAlura">Reglas Alura:</label>
+                    <input id="rulesAlura" name="rules" type="radio" value="1" checked>
+                    <label for="rulesBase64">Base64:</label>
+                    <input id="rulesBase64" name="rules" type="radio" value="2">
+                </div>
+                <div class="button-box">
+                    <button onclick="encrypt()">Encriptar</button>
+                    <button onclick="decrypt()">Desencriptar</button>
+                </div>
             </div>
         </section>
         <section>
             <h2 id="result">Texto encriptado:</h2>
-            <input id="encryptedText" placeholder="Aun no hay palabra para desencriptar">
+            <input id="encryptedText" placeholder="Aún no hay palabra para desencriptar">
             <div class="button-box">
                 <button onclick="copyButton()">Copiar</button> 
             </div>
