@@ -62,15 +62,27 @@ body{
     height: 100vh;
 
 }
+nav{
+    position: fixed;
+    top:0;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 100vw;
+}
+
 main{
     margin: auto;
-    width: 45%;
+    width: 41%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: var(--background-color-hover);
-    height: 85%;
-    gap: 65px;
+    height: 90%;
+    gap: 25px;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -83,7 +95,12 @@ h1
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-align: center;
-    font-size: 10vh;
+    font-size: 8vh;
+}
+img
+{
+    max-width: 200px;
+    margin: auto;
 }
 h2{
     font-family: "Montserrat", sans-serif;
@@ -92,7 +109,7 @@ h2{
     text-align: center;
     margin: 15px 0;
 }
-input{
+main input{
     border: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -119,6 +136,25 @@ textarea{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+}
+.container-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.rules-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.rules-box label{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: large;
+}
+.rules-box input{
+    height: 20px;
+    width: 30px;
 }
 button{
     margin: 10px;
@@ -162,7 +198,7 @@ button:hover{
 }
 @media only screen and (max-width: 1080px) {
     main {
-        width: 95vh;
+        width: 95vw;
     }
     h1{
         font-size: 8vh;
@@ -170,20 +206,18 @@ button:hover{
 }
 @media only screen and (max-width: 950px) {
     main {
-        width: 95vh;
+        width: 95vw;
     }
 
 }
 @media only screen and (max-width: 600px) {
     main{
+        width: 90vw;
         gap: 5px;
+        height: 90vh;
     }
     h1{
         font-size: 8vh;
-    }
-    .button-box{
-        flex-direction: column;
-        justify-content: center;
     }
     button{
         width: 100%;
